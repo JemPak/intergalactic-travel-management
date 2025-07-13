@@ -36,6 +36,7 @@ class TourSerializer(serializers.ModelSerializer):
 
 
 class TourDestinationSerializer(serializers.ModelSerializer):
+    destination = DestinationSerializer(read_only=True)
     class Meta:
         model = TourDestination
         fields = "__all__"

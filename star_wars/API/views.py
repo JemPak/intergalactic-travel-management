@@ -1,4 +1,7 @@
 from rest_framework import viewsets
+from rest_framework.response import Response
+from rest_framework.decorators import action
+
 from .models import (
     Planet, Activity, Destination, Accommodation,
     Tour, TourDestination, Booking, Review
@@ -33,12 +36,15 @@ class AccommodationViewSet(viewsets.ModelViewSet):
 class TourViewSet(viewsets.ModelViewSet):
     queryset = Tour.objects.all()
     serializer_class = TourSerializer
-
-
-class TourDestinationViewSet(viewsets.ModelViewSet):
-    queryset = TourDestination.objects.all()
-    serializer_class = TourDestinationSerializer
-
+    
+    @action(detail=True, methods=["get"])
+    def destinations(self, request, pk=None):
+        """
+        Retorna los destinos asociados a un tour específico (por ID del tour).
+        """
+        tour_destinations = TourDestination.objects.filter(tour_id=pk).select_related("destination")
+        serializer = TourDestinationSerializer(tour_destinations, many=True)
+        return Response(serializer.data)
 
 class BookingViewSet(viewsets.ModelViewSet):
     queryset = Booking.objects.all()

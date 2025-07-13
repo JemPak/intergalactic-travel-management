@@ -3,7 +3,7 @@ from rest_framework.routers import DefaultRouter
 
 from .views import (
     PlanetViewSet, ActivityViewSet, DestinationViewSet,
-    AccommodationViewSet, TourViewSet, TourDestinationViewSet,
+    AccommodationViewSet, TourViewSet,
     BookingViewSet, ReviewViewSet
 )
 
@@ -13,9 +13,10 @@ router.register(r'activities', ActivityViewSet)
 router.register(r'destinations', DestinationViewSet)
 router.register(r'accommodations', AccommodationViewSet)
 router.register(r'tours', TourViewSet)
-router.register(r'tour-destinations', TourDestinationViewSet)
+# router.register(r'tours/<int:tour_id>/destinations', TourDestinationViewSet)
 router.register(r'bookings', BookingViewSet)
 router.register(r'reviews', ReviewViewSet)
+
 
 urlpatterns = [
     path('', include(router.urls)),
