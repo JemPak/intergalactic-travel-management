@@ -1,6 +1,5 @@
 from django.db import models
-from django.contrib.auth import User
-
+from django.contrib.auth import get_user_model
 
 
 class Planet(models.Model):
@@ -74,7 +73,7 @@ class Booking(models.Model):
         ('Cancelado', 'Cancelado'),
     ]
 
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='bookings')
+    user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, related_name='bookings')
     tour = models.ForeignKey(Tour, on_delete=models.SET_NULL, null=True, blank=True, related_name='bookings')
     accommodation = models.ForeignKey(Accommodation, on_delete=models.SET_NULL, null=True, blank=True, related_name='bookings')
     date = models.DateField()

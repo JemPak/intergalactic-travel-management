@@ -1,17 +1,13 @@
 from rest_framework import viewsets
 from .models import (
-    User, Planet, Activity, Destination, Accommodation,
+    Planet, Activity, Destination, Accommodation,
     Tour, TourDestination, Booking, Review
 )
 from .serializers import (
-    UserSerializer, PlanetSerializer, ActivitySerializer, DestinationSerializer,
+    PlanetSerializer, ActivitySerializer, DestinationSerializer,
     AccommodationSerializer, TourSerializer, TourDestinationSerializer,
     BookingSerializer, ReviewSerializer
 )
-
-class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
 
 
 class PlanetViewSet(viewsets.ModelViewSet):

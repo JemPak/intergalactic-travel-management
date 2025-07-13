@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-import environ
 import os
 from pathlib import Path
 
@@ -18,27 +17,22 @@ from Authentication.settings import *
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# environ settings
-env = environ.Env()
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = "My_secret_key"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool('DJANGO_DEBUG', default=False)
+DEBUG = True
 
-PROJECT_NAME_CODE  = env.str('PROJECT_NAME_CODE') 
-
-ALLOWED_HOSTS = tuple(env.list('ALLOWED_HOSTS', default=[]))
+ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 
 # STATIC and MEDIA folders config:
-STATIC_ROOT = env.str('STATIC_ROOT', default=f'{BASE_DIR}/static')
-STATIC_URL =  env.str('STATIC_URL', default='/static/') 
-MEDIA_ROOT = env.str('MEDIA_ROOT', default=f'{BASE_DIR}/media')
-MEDIA_URL =  env.str('MEDIA_URL', default='/media/') 
+STATIC_ROOT = f'{BASE_DIR}/static'
+STATIC_URL =  '/static/'
+MEDIA_ROOT = f'{BASE_DIR}/media'
+MEDIA_URL =  '/media/'
 
 # Application definition
 
@@ -174,5 +168,3 @@ CORS_ALLOW_HEADERS = (
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-HASH_PASSWORD = env.str('HASH_PASSWORD')
