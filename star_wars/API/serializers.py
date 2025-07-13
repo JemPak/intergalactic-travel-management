@@ -1,0 +1,58 @@
+from rest_framework import serializers
+from .models import (
+    User, Planet, Activity, Destination, Accommodation,
+    Tour, TourDestination, Booking, Review
+)
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = "__all__"
+
+
+class PlanetSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Planet
+        fields = "__all__"
+
+
+class ActivitySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Activity
+        fields = "__all__"
+
+
+class DestinationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Destination
+        fields = "__all__"
+
+
+class AccommodationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Accommodation
+        fields = "__all__"
+
+
+class TourSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Tour
+        fields = "__all__"
+
+
+class TourDestinationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TourDestination
+        fields = "__all__"
+
+
+class BookingSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Booking
+        fields = "__all__"
+
+
+class ReviewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Review
+        fields = "__all__"
