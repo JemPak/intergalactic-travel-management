@@ -1,1 +1,475 @@
-[{"model": "API.film", "pk": 1, "fields": {"title": "Wilderman - Breitenberg", "opening_crawl": "Quos quis assumenda doloribus quod iusto repellendus assumenda. Laborum repellendus repellendus quas vel reiciendis perferendis officiis rerum atque. Iusto quia ab impedit. Excepturi odio voluptate possimus enim.", "directors": ["Harry Olson", "Mr. Karl Lebsack"], "producers": [], "release_date": "1987-10-12", "planets": [2, 4]}}, {"model": "API.film", "pk": 2, "fields": {"title": "Goldner - Stehr", "opening_crawl": "Maiores quod assumenda. Est corrupti voluptatibus. Iusto dicta adipisci cupiditate accusantium quam numquam culpa iure facilis. Quae assumenda tenetur molestiae. Accusamus doloribus fugit consequatur fugiat ducimus. Asperiores ullam facilis sed dolores beatae eaque.", "directors": ["Corey Weimann", "Meghan Koepp"], "producers": ["Israel Jerde DVM", "Mrs. Gwendolyn Weissnat"], "release_date": "1990-02-22", "planets": [1]}}, {"model": "API.film", "pk": 3, "fields": {"title": "Swaniawski - Sanford", "opening_crawl": "Recusandae quas ut ullam impedit cum molestiae ullam sequi numquam. Repudiandae quidem aspernatur totam unde ipsum omnis praesentium. Ipsa perferendis iusto saepe maxime optio ducimus quas.", "directors": ["Natasha Jakubowski", "Julie Hahn"], "producers": ["Marcia Smitham", "Janis Heller"], "release_date": "1990-02-22", "planets": [4]}}, {"model": "API.film", "pk": 4, "fields": {"title": "Armstrong Inc", "opening_crawl": "Soluta velit tempora iusto cupiditate reprehenderit eius harum repudiandae ducimus. Quae blanditiis dolorem quos fugit repellat deleniti. Fuga deserunt voluptate minima laboriosam nihil debitis voluptatem. Doloremque ducimus enim sed. Cum quos deserunt illo.", "directors": ["Sophie Thiel", "Frank Powlowski"], "producers": ["Norman Conn", "Alfred Kutch"], "release_date": "1990-02-22", "planets": [1, 2]}}, {"model": "API.planet", "pk": 1, "fields": {"name": "Guyana", "diameter": "6", "gravity": 49, "population": 30, "climate": "magenta", "residents": [2, 4, 6]}}, {"model": "API.planet", "pk": 2, "fields": {"name": "Serbia", "diameter": "1", "gravity": 140, "population": 152, "climate": "blue", "residents": [5, 8, 12]}}, {"model": "API.planet", "pk": 3, "fields": {"name": "Western Sahara", "diameter": "9", "gravity": 150, "population": 162, "climate": "sky blue", "residents": [1, 3, 11]}}, {"model": "API.planet", "pk": 4, "fields": {"name": "Estonia", "diameter": "9", "gravity": 122, "population": 196, "climate": "black", "residents": [10, 13, 14]}}, {"model": "API.resident", "pk": 1, "fields": {"name": "Keyon", "gender": "male", "age": 3, "skin_color": "plum", "eye_color": "teal", "height": 155, "mass": 93}}, {"model": "API.resident", "pk": 2, "fields": {"name": "Tomasa", "gender": "male", "age": 1, "skin_color": "orchid", "eye_color": "gold", "height": 128, "mass": 38}}, {"model": "API.resident", "pk": 3, "fields": {"name": "Vivien", "gender": "male", "age": 7, "skin_color": "grey", "eye_color": "lavender", "height": 98, "mass": 70}}, {"model": "API.resident", "pk": 4, "fields": {"name": "Chaz", "gender": "male", "age": 4, "skin_color": "magenta", "eye_color": "azure", "height": 92, "mass": 79}}, {"model": "API.resident", "pk": 5, "fields": {"name": "Forest", "gender": "male", "age": 9, "skin_color": "red", "eye_color": "olive", "height": 154, "mass": 39}}, {"model": "API.resident", "pk": 6, "fields": {"name": "Cleora", "gender": "male", "age": 7, "skin_color": "grey", "eye_color": "mint green", "height": 175, "mass": 99}}, {"model": "API.resident", "pk": 7, "fields": {"name": "Chauncey", "gender": "male", "age": 3, "skin_color": "orange", "eye_color": "tan", "height": 105, "mass": 68}}, {"model": "API.resident", "pk": 8, "fields": {"name": "Lucienne", "gender": "male", "age": 4, "skin_color": "plum", "eye_color": "magenta", "height": 27, "mass": 60}}, {"model": "API.resident", "pk": 9, "fields": {"name": "Cali", "gender": "female", "age": 6, "skin_color": "teal", "eye_color": "green", "height": 73, "mass": 140}}, {"model": "API.resident", "pk": 10, "fields": {"name": "Norval", "gender": "female", "age": 1, "skin_color": "plum", "eye_color": "blue", "height": 146, "mass": 191}}, {"model": "API.resident", "pk": 11, "fields": {"name": "Jamel", "gender": "female", "age": 7, "skin_color": "white", "eye_color": "salmon", "height": 196, "mass": 83}}, {"model": "API.resident", "pk": 12, "fields": {"name": "Carmella", "gender": "female", "age": 7, "skin_color": "black", "eye_color": "yellow", "height": 133, "mass": 84}}, {"model": "API.resident", "pk": 13, "fields": {"name": "Carson", "gender": "female", "age": 7, "skin_color": "orchid", "eye_color": "indigo", "height": 147, "mass": 191}}, {"model": "API.resident", "pk": 14, "fields": {"name": "Ulises", "gender": "female", "age": 2, "skin_color": "silver", "eye_color": "white", "height": 170, "mass": 38}}, {"model": "API.resident", "pk": 15, "fields": {"name": "Una", "gender": "female", "age": 1, "skin_color": "maroon", "eye_color": "cyan", "height": 163, "mass": 45}}, {"model": "API.resident", "pk": 16, "fields": {"name": "Clark", "gender": "female", "age": 6, "skin_color": "silver", "eye_color": "silver", "height": 75, "mass": 26}}, {"model": "API.character", "pk": 4, "fields": {"resident": 4, "films": [1, 4]}}, {"model": "API.character", "pk": 6, "fields": {"resident": 12, "films": [2]}}, {"model": "API.character", "pk": 7, "fields": {"resident": 8, "films": [3, 4]}}, {"model": "API.character", "pk": 8, "fields": {"resident": 6, "films": [1, 4]}}, {"model": "API.character", "pk": 9, "fields": {"resident": 15, "films": [3]}}]
+[
+    {
+        "model": "Authentication.User",
+        "pk": 1,
+        "fields": {
+            "email": "maria@email.com",
+            "nit": "100212121",
+            "is_staff": false,
+            "is_active": true,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "Authentication.User",
+        "pk": 2,
+        "fields": {
+            "email": "admin@email.com",
+            "nit": "92932332",
+            "is_staff": true,
+            "is_active": true,
+            "is_superuser": true
+        }
+    },
+    {
+        "model": "API.Planet",
+        "pk": 1,
+        "fields": {
+            "name": "Nueva Terra",
+            "population": "8.5 billones",
+            "language": "Español Intergaláctico",
+            "currency": "Créditos Estelares",
+            "image": "planets/nueva_tierra.jpg"
+        }
+    },
+    {
+        "model": "API.Planet",
+        "pk": 2,
+        "fields": {
+            "name": "Azurita Prime",
+            "population": "3.2 billones",
+            "language": "Neo-Latín",
+            "currency": "Cristales Azules",
+            "image": "planets/azurita.jpeg"
+        }
+    },
+    {
+        "model": "API.Planet",
+        "pk": 3,
+        "fields": {
+            "name": "K-634",
+            "population": "1.1 billones",
+            "language": "Poli-Deutch",
+            "currency": "Kriptos",
+            "image": "planets/k_planet.jpeg"
+        }
+    },
+    {
+        "model": "API.Planet",
+        "pk": 4,
+        "fields": {
+            "name": "Planeta Oscuro",
+            "population": "2.8 billones",
+            "language": "Neo-Latín",
+            "currency": "Pluts",
+            "image": "planets/planeta_oscuro.jpeg"
+        }
+    },
+    {
+        "model": "API.Planet",
+        "pk": 5,
+        "fields": {
+            "name": "Deslumbro",
+            "population": "0.7 billones",
+            "language": "Plance",
+            "currency": "Pluts",
+            "image": "planets/planeta_deslumbro.jpeg"
+        }
+    },
+    {
+        "model": "API.activity",
+        "pk": 1,
+        "fields": {
+            "name": "Aventura Espacial",
+            "type": "Aventura",
+            "description": "Actividades de alto riesgo en el espacio"
+        }
+    },
+    {
+        "model": "API.activity",
+        "pk": 2,
+        "fields": {
+            "name": "Turismo Cultural",
+            "type": "Cultural",
+            "description": "Exploración de culturas alienígenas"
+        }
+    },
+    {
+        "model": "API.activity",
+        "pk": 3,
+        "fields": {
+            "name": "Ocio",
+            "type": "Ocio",
+            "description": "Descanso y disfrute en la inmensidad del espacio"
+        }
+    },
+    {
+        "model": "API.activity",
+        "pk": 4,
+        "fields": {
+            "name": "Escaladas Glaciares",
+            "type": "Escalada",
+            "description": "Escale las montanas heladas de los planetas mas frios del universo"
+        }
+    },
+    {
+        "model": "API.destination",
+        "pk": 1,
+        "fields": {
+            "name": "Ciudad Cristal",
+            "planet": 1,
+            "activity": 2,
+            "description": "Ciudad futurista con edificios de cristal",
+            "image": "destinations/ciudad_cristal.jpg"
+        }
+    },
+    {
+        "model": "API.destination",
+        "pk": 2,
+        "fields": {
+            "name": "Cañón Estelar",
+            "planet": 2,
+            "activity": 1,
+            "description": "Formación rocosa con vistas espectaculares",
+            "image": "destinations/canon_estelar.jpg"
+        }
+    },
+    {
+        "model": "API.destination",
+        "pk": 3,
+        "fields": {
+            "name": "Ojo del Norte",
+            "planet": 3,
+            "activity": 1,
+            "description": "El lugar más helado del universo",
+            "image": "destinations/ojo_del_norte.jpg"
+        }
+    },
+    {
+        "model": "API.destination",
+        "pk": 4,
+        "fields": {
+            "name": "Agujero del ensueño",
+            "planet": 4,
+            "activity": 3,
+            "description": "Lugar destinado a viajar en el espacio tiempo",
+            "image": "destinations/agujero_ensueno.jpg"
+        }
+    },
+    {
+        "model": "API.destination",
+        "pk": 5,
+        "fields": {
+            "name": "Terminal intergalactica",
+            "planet": 5,
+            "activity": 2,
+            "description": "Espectacular ciudad con los trenes más rápidos de la galaxia",
+            "image": "destinations/tren_sur.jpg"
+        }
+    },
+    {
+        "model": "API.destination",
+        "pk": 6,
+        "fields": {
+            "name": "Casquete del deshielo",
+            "planet": 4,
+            "activity": 4,
+            "description": "Este lugar prontamente se convertirá en un mar helado ...",
+            "image": "destinations/casquete.jpg"
+        }
+    },
+    {
+        "model": "API.accommodation",
+        "pk": 1,
+        "fields": {
+            "name": "Hotel Luna Nueva",
+            "destination": 1,
+            "price": "500.00",
+            "rooms": 200,
+            "image": "accommodations/luna_nueva.jpg",
+            "description": "Un lujoso refugio suspendido en el cielo de Ciudad Cristal, con vistas panorámicas a tres lunas que orbitan en sincronía. Sus habitaciones cuentan con control de gravedad ajustable, cristales de aislamiento emocional y servicio galáctico las 24 horas. Es el destino perfecto para parejas, soñadores y quienes desean reconectar con el cosmos desde la tranquilidad de una suite flotante."
+        }
+    },
+    {
+        "model": "API.accommodation",
+        "pk": 2,
+        "fields": {
+            "name": "Posada Estelar",
+            "destination": 2,
+            "price": "300.00",
+            "rooms": 50,
+            "image": "accommodations/posada_estelar.jpg",
+            "description": "Una acogedora posada ubicada al borde del Cañón Estelar. Con una arquitectura tradicional que fusiona piedra cósmica y madera de meteorito, ofrece una experiencia cálida y auténtica. Las noches están ambientadas con narraciones de exploradores y comidas elaboradas con ingredientes locales. Ideal para viajeros curiosos que desean conectarse con la esencia del planeta."
+        }
+    },
+    {
+        "model": "API.accommodation",
+        "pk": 3,
+        "fields": {
+            "name": "Cabañas bajo Zero",
+            "destination": 3,
+            "price": "280.00",
+            "rooms": 40,
+            "image": "accommodations/bajo_zero.jpg",
+            "description": "Alojamiento inmersivo bajo el hielo en Ojo del Norte. Estas cabañas submarinas están equipadas con calefacción geotérmica, ventanales de hielo reforzado y ambientes personalizables que simulan auroras boreales. Un paraíso para quienes buscan privacidad, silencio absoluto y belleza polar inigualable."
+        }
+    },
+    {
+        "model": "API.accommodation",
+        "pk": 4,
+        "fields": {
+            "name": "Motel intergalactico",
+            "destination": 5,
+            "price": "700.00",
+            "rooms": 80,
+            "image": "accommodations/motel.jpg",
+            "description": "Ubicado en la Terminal Intergaláctica de Deslumbro, este motel ofrece una experiencia sensorial única para los amantes del placer y la extravagancia. Cada habitación está tematizada con culturas alienígenas extintas, iluminación sensorial adaptable y música ambiental sincronizada con las pulsaciones del huésped. Es el rincón secreto favorito de artistas, exploradores nocturnos y seres que buscan liberar su energía sin juicio."
+        }
+    },
+    {
+        "model": "API.tour",
+        "pk": 1,
+        "fields": {
+            "name": "Ruta de las Estrellas",
+            "description": "Una experiencia visual incomparable que recorre los miradores estelares más impresionantes de toda la galaxia. Durante este tour de 3 días, los viajeros tendrán acceso a plataformas flotantes situadas en puntos estratégicos del espacio, donde podrán observar supernovas, nebulosas y cúmulos estelares a través de visores panorámicos de última generación. Además de las vistas, se incluyen sesiones de meditación cósmica, talleres sobre navegación astral y charlas con astrónomos intergalácticos.",
+            "duration": "3 días",
+            "price": "1500.00",
+            "image": "tours/ruta_estrellas.jpg",
+            "available_spots": 20
+        }
+    },
+    {
+        "model": "API.tour",
+        "pk": 2,
+        "fields": {
+            "name": "Aventura Volcánica",
+            "description": "Una expedición intensa y electrizante hacia los volcanes activos más espectaculares del universo. Durante 2 días, los participantes explorarán cráteres humeantes, caminarán sobre ríos de lava solidificada y volarán en aeronaves ignífugas sobre explosiones volcánicas controladas. Este tour es ideal para espíritus aventureros, científicos y amantes de lo extremo.",
+            "duration": "2 días",
+            "price": "2000.00",
+            "image": "tours/ruta_volcanica.jpeg",
+            "available_spots": 15
+        }
+    },
+    {
+        "model": "API.tour",
+        "pk": 3,
+        "fields": {
+            "name": "Agujeros en el tiempo",
+            "description": "Un viaje revolucionario a través de agujeros negros estables que simulan travesías temporales entre distintas eras del cosmos. Durante los 5 días de esta travesía, los visitantes atravesarán zonas de distorsión temporal, presenciarán eventos cósmicos en reversa y aprenderán sobre los misterios del tiempo y el espacio. Incluye cápsulas de meditación temporal y debates filosóficos con expertos en cronodinámica.",
+            "duration": "5 días",
+            "price": "3200.00",
+            "image": "tours/agujeros.jpg",
+            "available_spots": 10
+        }
+    },
+    {
+        "model": "API.tour",
+        "pk": 4,
+        "fields": {
+            "name": "Exploración polar",
+            "description": "Un tour de 3 días hacia las regiones polares más extremas y ocultas de los planetas helados. Los exploradores recorrerán campos de hielo centenario, descenderán a grietas subglaciares llenas de bioluminiscencia y participarán en excavaciones arqueológicas de civilizaciones antiguas congeladas en el tiempo. Ideal para quienes buscan aislamiento, introspección y paisajes inolvidables.",
+            "duration": "3 días",
+            "price": "1800.00",
+            "image": "tours/polares.jpeg",
+            "available_spots": 15
+        }
+    },
+    {
+        "model": "API.tourdestination",
+        "pk": 1,
+        "fields": {
+            "tour": 1,
+            "destination": 1,
+            "visit_date": "2024-07-15"
+        }
+    },
+    {
+        "model": "API.tourdestination",
+        "pk": 2,
+        "fields": {
+            "tour": 1,
+            "destination": 4,
+            "visit_date": "2024-07-16"
+        }
+    },
+    {
+        "model": "API.tourdestination",
+        "pk": 3,
+        "fields": {
+            "tour": 2,
+            "destination": 3,
+            "visit_date": "2025-01-20"
+        }
+    },
+    {
+        "model": "API.tourdestination",
+        "pk": 4,
+        "fields": {
+            "tour": 2,
+            "destination": 5,
+            "visit_date": "2025-01-22"
+        }
+    },
+    {
+        "model": "API.tourdestination",
+        "pk": 5,
+        "fields": {
+            "tour": 3,
+            "destination": 4,
+            "visit_date": "2025-01-22"
+        }
+    },
+    {
+        "model": "API.tourdestination",
+        "pk": 6,
+        "fields": {
+            "tour": 4,
+            "destination": 6,
+            "visit_date": "2025-01-22"
+        }
+    },
+    {
+        "model": "API.booking",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "tour": 1,
+            "accommodation": null,
+            "date": "2025-03-15",
+            "people": 2,
+            "payment_method": "Crédito Estelar",
+            "status": "Confirmado"
+        }
+    },
+    {
+        "model": "API.booking",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "tour": null,
+            "accommodation": 1,
+            "date": "2025-04-01",
+            "people": 3,
+            "payment_method": "Cristales",
+            "status": "Pendiente"
+        }
+    },
+    {
+        "model": "API.booking",
+        "pk": 3,
+        "fields": {
+            "user": 1,
+            "tour": 2,
+            "accommodation": null,
+            "date": "2025-05-20",
+            "people": 4,
+            "payment_method": "Crédito Estelar",
+            "status": "Confirmado"
+        }
+    },
+    {
+        "model": "API.booking",
+        "pk": 4,
+        "fields": {
+            "user": 2,
+            "tour": 1,
+            "accommodation": 2,
+            "date": "2025-06-15",
+            "people": 2,
+            "payment_method": "Cristales",
+            "status": "Cancelado"
+        }
+    },
+    {
+        "model": "API.booking",
+        "pk": 5,
+        "fields": {
+            "user": 1,
+            "tour": null,
+            "accommodation": 2,
+            "date": "2025-07-10",
+            "people": 1,
+            "payment_method": "Crédito Estelar",
+            "status": "Pendiente"
+        }
+    },
+    {
+        "model": "API.booking",
+        "pk": 6,
+        "fields": {
+            "user": 2,
+            "tour": 2,
+            "accommodation": 1,
+            "date": "2025-08-22",
+            "people": 5,
+            "payment_method": "Cristales",
+            "status": "Confirmado"
+        }
+    },
+    {
+        "model": "API.booking",
+        "pk": 7,
+        "fields": {
+            "user": 1,
+            "tour": 1,
+            "accommodation": null,
+            "date": "2025-09-30",
+            "people": 3,
+            "payment_method": "Crédito Estelar",
+            "status": "Pendiente"
+        }
+    },
+    {
+        "model": "API.booking",
+        "pk": 8,
+        "fields": {
+            "user": 2,
+            "tour": null,
+            "accommodation": 2,
+            "date": "2025-10-15",
+            "people": 2,
+            "payment_method": "Cristales",
+            "status": "Confirmado"
+        }
+    },
+    {
+        "model": "API.review",
+        "pk": 1,
+        "fields": {
+            "booking": 1,
+            "rating": 5,
+            "comment": "¡Experiencia inolvidable! Los paisajes son increíbles.",
+            "date": "2025-03-18"
+        }
+    },
+    {
+        "model": "API.review",
+        "pk": 2,
+        "fields": {
+            "booking": 2,
+            "rating": 4,
+            "comment": "Excelente servicio, pero el transporte podría mejorar.",
+            "date": "2025-04-05"
+        }
+    },
+    {
+        "model": "API.review",
+        "pk": 3,
+        "fields": {
+            "booking": 3,
+            "rating": 5,
+            "comment": "La aventura volcánica superó todas mis expectativas.",
+            "date": "2025-05-23"
+        }
+    },
+    {
+        "model": "API.review",
+        "pk": 4,
+        "fields": {
+            "booking": 6,
+            "rating": 4,
+            "comment": "Increíble tour familiar, muy recomendado.",
+            "date": "2025-08-25"
+        }
+    }
+]
