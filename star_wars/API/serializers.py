@@ -3,6 +3,7 @@ from .models import (
     Planet, Activity, Destination, Accommodation,
     Tour, TourDestination, Booking, Review
 )
+from Authentication.models import User
 
 
 class PlanetSerializer(serializers.ModelSerializer):
@@ -52,3 +53,9 @@ class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
         fields = "__all__"
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        exclude = ["password"]
+        write_only = ("password",)
