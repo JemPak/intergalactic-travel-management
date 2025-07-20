@@ -13,7 +13,7 @@ from .serializers import (
     BookingSerializer, ReviewSerializer, UserSerializer
 )
 
-from .filters import TourFilter, AccomodationFilter
+from .filters import TourFilter, AccomodationFilter, UserFilter
 
 class PlanetViewSet(viewsets.ModelViewSet):
     queryset = Planet.objects.all()
@@ -72,3 +72,4 @@ class ReviewViewSet(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    filterset_class = UserFilter

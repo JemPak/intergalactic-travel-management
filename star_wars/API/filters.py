@@ -2,6 +2,7 @@
 from .models import (
     Accommodation, Tour
 )
+from Authentication.models import User
 
 import django_filters
 
@@ -23,3 +24,10 @@ class AccomodationFilter(django_filters.FilterSet):
     class Meta:
         model = Accommodation
         fields = ['activity', 'planet']
+
+class UserFilter(django_filters.FilterSet):
+    email = django_filters.CharFilter(field_name='email', lookup_expr='exact')
+
+    class Meta:
+        model = User
+        fields = ['email']
